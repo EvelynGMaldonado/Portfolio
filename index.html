@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./reset.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href= "https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
     <link rel="stylesheet" href="./style.css">
     <title>Portfolio</title>
+</head>
 </head>
 
 <body>
@@ -14,7 +18,7 @@
         <h1>Evelyn Maldonado</h1>
         
         <nav>
-            <ul>
+            <ul class="responsive">
                 <li>
                     <a href="#about-me">About me</a>
                 </li>
@@ -28,72 +32,102 @@
                     <a href="#">Resume</a>   
                     <!-- poner leyenda coming soon! -->
                 </li>
-            </ul>
+            <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#about-me">About me</a>
+                <a class="dropdown-item" href="#work">Work</a>
+                <a class="dropdown-item" href="#contact-me">Contact me</a>
+                <a class="dropdown-item"  href="#">Resume</a>
+
+            </div>
+            </li> -->
+        </ul>
+            <!-- <select>
+                <option value ="#about-me" selected="selected">About me</option>
+                <option value ="#work" selected="selected">Work</option>
+                <option value ="#contact-me" selected="selected">Contact me</option>
+                <option value ="" selected="selected">Resume</option>
+            </select> -->
         </nav>
     </header>
     <nav class="photo1">
         <figure class="photo1" role="img" aria-label="Work space"></figure>
         <img src="image.jpg" width = "15%">
     </nav>
-    <main class="content">
-        <section id="about-me" class="content-section">
-           
-            <h2>About me</h2>
-           
-        </section>
-        <section id="work" class="content-section">
-           
-            <h2>Work</h2>
-           
-        </section>
-        <section id="contact-me" class="content-section">
-            
-            <h2>Contact me</h2>
-          
-        </section>
-    </main>
-    <aside class="information">
-        <section class="info-section">
-            <p>
-                The About Me or Profile section of your portfolio, is a short summary about yourself in relation to the type of role you are applying for. 
-                In the sample portfolio, the student has highlighted their program, the projects they’ve worked on and their specific area of interest in their field.
-            </p>
-        </section>
-        <section class="work-section">
-            <div>
-                <div id="image1" class="principalimage">
-                    <img  src="https://prod-discovery.edx-cdn.org/media/programs/card_images/e0de6882-c5d1-43f3-99e0-17e386489dca-9c3bda2df48f.jpg" />
+    <div class="card mb-3 content" style="max-width:100%;">
+    <div class="row no-gutters">
+        <div class="col-md-4 content-section" id="about-me">
+            <h2 class="text-center mt-3">About me</h2>
+        </div>
+        <div class="col-md-8">
+        <div class="card-body rounded" id="background">
+            <p class="card-text">The About Me or Profile section of your portfolio, is a short summary about yourself in relation to the type of role you are applying for. 
+                In the sample portfolio, the student has highlighted their program, the projects they’ve worked on and their specific area of interest in their field.</p>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="card mb-3 content" style="max-width:100%;">
+        <div class="row no-gutters">
+            <div class="col-md-4 content-section" id="work">
+                <h2 class="text-center mt-3">Work</h2>
+            </div>
+            <div class="col-md-8 ">
+                <div class="card-body rounded" id="background">
+                    <div class="row">
+                        <div class="card mb-3 text-white" id="image1" style="max-width:100%;">
+                                <img class="card-img" src="https://prod-discovery.edx-cdn.org/media/programs/card_images/e0de6882-c5d1-43f3-99e0-17e386489dca-9c3bda2df48f.jpg" class="card-img-top" style="max-width:100%;" alt="Project1">
+                            <a id="link1" href="https://github.com/EvelynGMaldonado/Project2" class="card-title">Let's play chess</a>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col card mb-3 text-white secondaryimage" id="image2" style="max-width:24%;">
+                            <img class="card-img" src="https://www.gratistodo.com/wp-content/uploads/2016/10/imagenes-oto%c3%b1o-fondos-hd-gratis.jpg" class="card-img-top" style="max-width:100%;" alt="Project1">
+                            <a id="link1" href="https://github.com/EvelynGMaldonado/tech_blog_MVC" class="card-title">Tech Blog MVC</a>
+                        </div>
+                        <div class=" col card mb-3 text-white secondaryimage" id="image3" style="max-width:24%;">
+                            <img class="card-img" src="https://blablaocio.com/wp-content/uploads/sites/7/2017/01/EL-INVIERNO-ALEM%C3%81N-1-1024x640.jpg" class="card-img-top" style="max-width:100%;" alt="Project1">
+                            <a id="link1" href="https://github.com/EvelynGMaldonado/password_generator" class="card-title">Password Generator</a>
+                        </div>
+                        <div class="col card mb-3 text-white secondaryimage" id="image4" style="max-width:24%;">
+                            <img class="card-img" src="https://www.gratistodo.com/wp-content/uploads/2017/02/Primavera-Wallpapers-15.jpg" class="card-img-top" style="max-width:100%;" alt="Project1">
+                            <a id="link1" href="https://github.com/EvelynGMaldonado/weather_dashboard" class="card-title">Weather Dashboard</a>
+                        </div>
+                        <div class="col card mb-3 text-white secondaryimage" id="image5" style="max-width:24%;">
+                            <img class="card-img" src="https://image.freepik.com/foto-gratis/paisaje-palma-tropical-vacaciones-verano_1203-5352.jpg" class="card-img-top" style="max-width:100%;" alt="Project1">
+                            <a id="link1" href="https://github.com/EvelynGMaldonado/Employee-tracker" class="card-title">Employee Managment System</a>
+                        </div>
+                    </div>
                 </div>
-                <div id="image2" class="secondaryimage">
-                    <img src="https://www.gratistodo.com/wp-content/uploads/2016/10/imagenes-oto%c3%b1o-fondos-hd-gratis.jpg" />
-                </div>
-                <div id="image3" class="secondaryimage">
-                    <img  src="https://blablaocio.com/wp-content/uploads/sites/7/2017/01/EL-INVIERNO-ALEM%C3%81N-1-1024x640.jpg" />
-                </div>
-                <div id= "image4" class="secondaryimage">
-                    <img  src="https://www.gratistodo.com/wp-content/uploads/2017/02/Primavera-Wallpapers-15.jpg" />
-                </div>
-                <div id="image5" class="secondaryimage">
-                    <img  src="https://image.freepik.com/foto-gratis/paisaje-palma-tropical-vacaciones-verano_1203-5352.jpg" />
-                </div>
-            </div>  
-        </section>
-        <section class="contact-section">
-            <ul>
-                <li><strong> Email:</strong> <a href="#">evelyn.gmaldonado@gmail.com</a></li>
-                <li><strong>GitHub:</strong> <a href="#">EvelynGMaldoando</a></li>
-                <li><strong> Phone number:</strong> <a href="#">206 399 7452</a></li>
-                <li><strong>Resume:</strong> <a href="#">Coming soon!</a></li>
-            </ul>
-
-        </section>
-    </aside>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-3 content" style="max-width:100%;">
+        <div class="row no-gutters">
+            <div class="col-md-4 content-section" id="contact-me">
+                <h2 class="text-center mt-3">Contact me</h2>
+            </div>
+            <div class="col-md-8">
+            <div class="card-body contact-section rounded">
+                <ul>
+                    <li><strong> Email:</strong> <a href="#">evelyn.gmaldonado@gmail.com</a></li>
+                    <li><strong>GitHub:</strong> <a href="#">EvelynGMaldoando</a></li>
+                    <li><strong> Phone number:</strong> <a href="#">206 399 7452</a></li>
+                    <li><strong>Resume:</strong> <a href="#">Coming soon!</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
     <footer>
         <h2>Made by Evelyn G Maldonado</h2>
-        <p>
-          
-        </p>
-    </footer>
-</body>
 
+    </footer>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</body>
 </html>

@@ -3,8 +3,9 @@
     --white: white;
     --gray: lightgray;
 }
+body {
 
-
+}
 header {
     height: 120px;
     padding: 20px;
@@ -12,7 +13,9 @@ header {
     background-color: var(--pink);
     color: var(--white);
 }
-
+nav select {
+    display:none;
+}
 header h1 {
     display: inline-block;
     font-size: 48px;
@@ -42,9 +45,11 @@ header nav ul li a {
     text-decoration: none;
     margin: auto;
 }
-
 p {
     font-size: 16px;
+}
+h2 {
+    color: var(--pink);
 }
 
 .photo1 {
@@ -66,93 +71,73 @@ p {
     width: auto;
 }
 
-.content {
-    width: 20%;
-    height: 100%;
-    display: inline-block;
-    /*display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;*/
-    margin-left: 20px;
-}
+.contact-section{
 
-.content-section {
-    margin-bottom: 20px;
-    padding: 70px;
-    padding-right: 20px;
-    /*height: 800px;*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: var(--white);
-    color: var(--pink);
-    border-right: var(--pink) solid 10px;
-    text-align: right;
-}
-#about-me {
-    height: 30%;
-
-}
-#work {
-    height: 1000px;
-}
-#contact-me {
-    height: 100px;
-    margin-bottom: 20px;
-    padding: 40px;
-    padding-right: 20px;
-}
-
-.content-section h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.information {
-    margin-right: 20px;
-    /*padding: 20px;*/
-    clear: both;
-    float: right;
-    width: 75%;
-    height: 650px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--gray);
+    color: black;
+    text-align:center;
     
-    /*display:flex;
-    flex-direction: column;*/    
-}
-
-.info-section {
-    /*margin-bottom: 32px;
-    color: #ffffff;*/
-    margin-bottom: 20px;
-    padding: 10px;
-    height: 30%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: var(--gray);
-    color: black;
-
-}
-.work-section {
-    height: 1000px;
-    background-color: var(--gray);
-    margin-bottom: 20px;
-    padding: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: var(--gray);
-    color: black;
 
 }
 
-
+ul {
+    padding-top: 1%;
+}
+.contact-section ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 5%;
+/* float:*/
+}
+#background {
+    background-color: var(--gray);
+}
 .principalimage img {
     display: block;
     width: 100%;
     margin: 0px 0px 5px 0px;
     height: 500px;
 }
+.card-body {
+    border-left: var(--pink) solid 10px;
+}
+.content{
+    border-bottom:transparent;
+    border-top: transparent;
+    border-left: transparent;
+}
+img:hover {
+    box-shadow: -5px -5px 15px 15px #b91a64;
+}
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 1.75rem;
+}
+#image1 {
+    position:relative;
+}
+#link1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-color: white;
+    padding: 2%;
+    margin-right: 12px;
+    border: 10px solid var(--pink);
+    border-style: dotted;
+    border-width: thick;
+    background-color: pink;
+}
 
 .secondaryimage img {
-    width: 25%;
     height: 470px;
     display:flex;
     flex-wrap: wrap;
@@ -162,55 +147,54 @@ p {
 
 #image2 {
     margin: 5px 5px 0px 4px;
+    position:relative;
 }
 
 #image3 {
     margin: 5px 5px 0px 5px;
+    position:relative;
 }
 
 #image4 {
     margin: 5px 5px 0px 5px;
+    position:relative;
 }
 
 #image5 {
     margin: 5px 0px 0px 5px;
+    position:relative;
 }
 
-img:hover {
-    box-shadow: -5px -5px 15px 15px #b91a64;
-}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .responsive {
+        display: none;
+    }
+    /* nav select {
+        display: inline-block;
+    }
+} */
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
 
 
-.contact-section{
-    height: 100px;
-    margin-bottom: 20px;
-    padding: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: var(--gray);
-    color: black;
-    text-align:center;
     
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* nav ul {
+        display: none;
+    }
+    nav select {
+        display: inline-block;
+    } */
+
 
 }
 
-.contact-section ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding-top: 30px;
-    
-   /* float:*/
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
 }
-
-
-
-footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-
-footer h2 {
-    font-size: 20px;
-}
-
