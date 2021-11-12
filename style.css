@@ -13,9 +13,7 @@ header {
     background-color: var(--pink);
     color: var(--white);
 }
-nav select {
-    display:none;
-}
+
 header h1 {
     display: inline-block;
     font-size: 48px;
@@ -166,31 +164,17 @@ footer h2 {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
-    .responsive {
-        display: none;
-    }
-    /* nav select {
-        display: inline-block;
-    }
-} */
+@media (min-width: 576px) {
+
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-
-    
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    /* nav ul {
-        display: none;
-    }
-    nav select {
-        display: inline-block;
-    } */
-
 
 }
 
