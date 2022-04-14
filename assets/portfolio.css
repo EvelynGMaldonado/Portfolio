@@ -5,7 +5,7 @@
 }
 
 .photo-background {
-    height:400px;
+    height:17%;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../assets/background.jpg");
@@ -15,7 +15,7 @@
 
 };
 
-#photo-background {
+.photo-background img{
     /* position: absolute;
     top: 0;
     left: 5px;
