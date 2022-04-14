@@ -1,0 +1,29 @@
+:root{
+    --pink: #b91a64;
+    --white: white;
+    --gray: lightgray;
+}
+
+.photo-background {
+    height:400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../assets/background.jpg");
+    background-size: cover;
+    background-position: relative;
+    display: inline-block;
+
+};
+
+#photo-background {
+    /* position: absolute;
+    top: 0;
+    left: 5px;
+    margin-top: 120px;
+    border-radius: 20%;
+    height: 400px;
+    width: auto;
+    z-index: 1;
+    margin-bottom: 0px; */
+};
+
