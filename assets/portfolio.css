@@ -34,6 +34,23 @@
 /* .content-section {
 
 } */
+#tags {
+    /* position: absolute; */
+    /* bottom: 0;
+    right: 0; */
+    /* z-index: 1; */
+    /* background-color: white;
+    padding: 2%;
+    margin-right: 12px;
+    border: 10px solid var(--pink);
+    border-style: dotted;
+    border-width: thick;
+    background-color: pink; */
+}
+
+#myprojects {
+    /* position: relative; */
+}
 #background {
     background-color: var(--gray);
 }
