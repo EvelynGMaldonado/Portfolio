@@ -26,4 +26,14 @@
     z-index: 1;
     margin-bottom: 0px; */
 };
+.content{
+    border-bottom:transparent;
+    border-top: transparent;
+    border-left: transparent;
+}
+/* .content-section {
 
+} */
+#background {
+    background-color: var(--gray);
+}
